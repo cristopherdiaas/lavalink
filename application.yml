@@ -1,0 +1,10 @@
+server:
+  port: ${LAVALINK_SERVER_PORT:2333}
+  address: ${LAVALINK_SERVER_ADDRESS:0.0.0.0}
+
+lavalink:
+  server:
+    password: ${LAVALINK_SERVER_PASSWORD:youshallnotpass}
+    ratelimit:
+      strategy: ${LAVALINK_SERVER_RATELIMIT_STRATEGY:RotateOnBan}
+      retry-limit: ${LAVALINK_SERVER_RATELIMIT_RETRY_LIMIT:5}
